@@ -13,7 +13,11 @@ def plot_histogram(df, column, bins=30):
 def plot_correlation_matrix(df):
     """Plot a correlation matrix."""
     plt.figure(figsize=(10, 8))
-    correlation = df.corr()
+
+    # Select only numeric columns
+    numeric_df = df.select_dtypes(include=['number'])
+  
+    correlation = numeric_df.corr()
     sns.heatmap(correlation, annot=True, cmap="coolwarm", fmt=".2f")
     plt.title("Correlation Matrix")
     plt.show()
