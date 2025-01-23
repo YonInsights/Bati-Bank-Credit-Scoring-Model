@@ -18,14 +18,14 @@ def split_data(df, target_column, test_size=0.2, random_state=42):
     return X_train, X_test, y_train, y_test
 
 def train_logistic_regression(X_train, y_train):
-    """Train a Logistic Regression model."""
-    model = LogisticRegression(random_state=42, max_iter=1000)
+    """Train a Logistic Regression model with class weighting."""
+    model = LogisticRegression(random_state=42, max_iter=1000, class_weight="balanced")
     model.fit(X_train, y_train)
     return model
 
 def train_random_forest(X_train, y_train):
-    """Train a Random Forest Classifier."""
-    model = RandomForestClassifier(random_state=42, n_estimators=100)
+    """Train a Random Forest Classifier with class weighting."""
+    model = RandomForestClassifier(random_state=42, n_estimators=100, class_weight="balanced")
     model.fit(X_train, y_train)
     return model
 
