@@ -87,10 +87,12 @@ Bati-Bank-Credit-Scoring/
 └── LICENSE
 ```
 ## **Usage Guide**
-### Prerequisites
+
+### Prerequisites & Setup
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/YonInsights/Bati-Bank-Credit-Scoring-Model.git
+   cd Bati-Bank-Credit-Scoring-Model
    ```
 2. Create a virtual environment and install dependencies:
    ```bash
@@ -98,12 +100,15 @@ Bati-Bank-Credit-Scoring/
    source env/bin/activate  # On Windows: `env\Scripts\activate`
    pip install -r requirements.txt
    ```
-   ## **Author**
+
+---
+
+## **Author**
 **Yonatan Abrham**  
 - Email: [email2yonatan@gmail.com](mailto:email2yonatan@gmail.com)  
 - LinkedIn: [Yonatan Abrham](https://www.linkedin.com/in/yonatan-abrham1/)  
 - GitHub: [YonInsights](https://github.com/YonInsights)  
-Feel free to connect for collaborations or queries.
+- Platform: [Infradigital CAD](https://www.infradigitalcad.com/)
 
 ---
 
